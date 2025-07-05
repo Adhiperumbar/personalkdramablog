@@ -7,7 +7,7 @@ Welcome to **KdramBlog**, a passion project where I share my thoughts, favorites
 
 ## ✨ Live Demo
 
-🔗 [Visit the Blog Here](https://adhiperumbar.github.io/personalkdramablog)
+🔗 [Visit the Blog Here](https://github.com/Adhiperumbar/personalkdramablog)
 
 ---
 
