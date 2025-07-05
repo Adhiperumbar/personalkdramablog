@@ -1,0 +1,584 @@
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f9f6f2;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: #fff;
+  border-bottom: 1px solid #ececec;
+  padding: 1.5rem 1rem 1rem 1rem;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0 0 0.5rem 0;
+  font-size: 2.2rem;
+  letter-spacing: 1px;
+  color: #a0528a;
+}
+
+.main-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: #a0528a;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.main-nav a:hover {
+  color: #d291bc;
+}
+
+main {
+  display: flex;
+  max-width: 1100px;
+  margin: 2rem auto;
+  gap: 2rem;
+  padding: 0 1rem;
+}
+
+.sidebar {
+  min-width: 180px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(160, 82, 138, 0.05);
+  padding: 1.5rem 1rem;
+  height: fit-content;
+}
+
+.sidebar h2 {
+  font-size: 1.1rem;
+  color: #a0528a;
+  margin-top: 0;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar a {
+  color: #333;
+  text-decoration: none;
+  display: block;
+  padding: 0.3rem 0;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+
+.sidebar a:hover {
+  background: #f3e6f5;
+  color: #a0528a;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.featured-drama {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(160, 82, 138, 0.07);
+  padding: 1.5rem;
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.featured-drama img {
+  width: 220px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0 1px 4px rgba(160, 82, 138, 0.08);
+}
+
+.drama-info {
+  flex: 1;
+  min-width: 200px;
+}
+
+.drama-info h3 {
+  margin-top: 0;
+  color: #a0528a;
+}
+
+.rating {
+  margin-top: 0.5rem;
+  font-size: 1.1rem;
+  color: #d291bc;
+}
+
+.blog-post {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(160, 82, 138, 0.07);
+  padding: 1.5rem;
+}
+
+.blog-post h2 {
+  margin-top: 0;
+  color: #a0528a;
+}
+
+.tags {
+  margin-bottom: 1rem;
+}
+
+.tags span {
+  background: #f3e6f5;
+  color: #a0528a;
+  border-radius: 4px;
+  padding: 0.2rem 0.7rem;
+  margin-right: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.blog-post img {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  object-fit: cover;
+  box-shadow: 0 1px 4px rgba(160, 82, 138, 0.08);
+}
+
+.post-body p {
+  line-height: 1.7;
+  margin: 0 0 1rem 0;
+}
+
+.romance-section {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(160, 82, 138, 0.07);
+  padding: 1.5rem;
+}
+
+.romance-section h2 {
+  margin-top: 0;
+  color: #a0528a;
+  font-size: 1.8rem;
+}
+
+.intro {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #555;
+  margin-bottom: 2rem;
+  font-style: italic;
+}
+
+.romance-dramas {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.romance-drama {
+  padding: 1.2rem;
+  background: #f9f6f2;
+  border-radius: 8px;
+  border-left: 4px solid #d291bc;
+}
+
+.romance-drama h3 {
+  margin: 0 0 0.5rem 0;
+  color: #a0528a;
+  font-size: 1.3rem;
+}
+
+.romance-drama p {
+  margin: 0 0 0.8rem 0;
+  line-height: 1.6;
+  color: #444;
+}
+
+.romance-drama .tags {
+  margin-bottom: 0.8rem;
+}
+
+.romance-drama .tags span {
+  background: #f3e6f5;
+  color: #a0528a;
+  border-radius: 4px;
+  padding: 0.2rem 0.7rem;
+  margin-right: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.commentary {
+  font-style: italic;
+  color: #666;
+  background: #fff;
+  padding: 0.8rem;
+  border-radius: 6px;
+  border-left: 3px solid #a0528a;
+  margin: 0;
+}
+
+.closing {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #a0528a;
+  margin: 2rem 0 0 0;
+  font-weight: 500;
+}
+
+.thriller-section {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(160, 82, 138, 0.07);
+  padding: 1.5rem;
+}
+
+.thriller-section h2 {
+  margin-top: 0;
+  color: #a0528a;
+  font-size: 1.8rem;
+}
+
+.thriller-dramas {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.thriller-drama {
+  padding: 1.2rem;
+  background: #f9f6f2;
+  border-radius: 8px;
+  border-left: 4px solid #8b4513;
+}
+
+.thriller-drama h3 {
+  margin: 0 0 0.5rem 0;
+  color: #a0528a;
+  font-size: 1.3rem;
+}
+
+.thriller-drama p {
+  margin: 0 0 0.8rem 0;
+  line-height: 1.6;
+  color: #444;
+}
+
+.thriller-drama .tags {
+  margin-bottom: 0.8rem;
+}
+
+.thriller-drama .tags span {
+  background: #f3e6f5;
+  color: #a0528a;
+  border-radius: 4px;
+  padding: 0.2rem 0.7rem;
+  margin-right: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.fantasy-section {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(160, 82, 138, 0.07);
+  padding: 1.5rem;
+}
+
+.fantasy-section h2 {
+  margin-top: 0;
+  color: #a0528a;
+  font-size: 1.8rem;
+}
+
+.fantasy-dramas {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.fantasy-drama {
+  padding: 1.2rem;
+  background: #f9f6f2;
+  border-radius: 8px;
+  border-left: 4px solid #9370db;
+}
+
+.fantasy-drama h3 {
+  margin: 0 0 0.5rem 0;
+  color: #a0528a;
+  font-size: 1.3rem;
+}
+
+.fantasy-drama p {
+  margin: 0 0 0.8rem 0;
+  line-height: 1.6;
+  color: #444;
+}
+
+.fantasy-drama .tags {
+  margin-bottom: 0.8rem;
+}
+
+.fantasy-drama .tags span {
+  background: #f3e6f5;
+  color: #a0528a;
+  border-radius: 4px;
+  padding: 0.2rem 0.7rem;
+  margin-right: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.sliceoflife-section {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(160, 82, 138, 0.07);
+  padding: 1.5rem;
+}
+
+.sliceoflife-section h2 {
+  margin-top: 0;
+  color: #a0528a;
+  font-size: 1.8rem;
+}
+
+.sliceoflife-dramas {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.sliceoflife-drama {
+  padding: 1.2rem;
+  background: #f9f6f2;
+  border-radius: 8px;
+  border-left: 4px solid #90ee90;
+}
+
+.sliceoflife-drama h3 {
+  margin: 0 0 0.5rem 0;
+  color: #a0528a;
+  font-size: 1.3rem;
+}
+
+.sliceoflife-drama p {
+  margin: 0 0 0.8rem 0;
+  line-height: 1.6;
+  color: #444;
+}
+
+.sliceoflife-drama .tags {
+  margin-bottom: 0.8rem;
+}
+
+.sliceoflife-drama .tags span {
+  background: #f3e6f5;
+  color: #a0528a;
+  border-radius: 4px;
+  padding: 0.2rem 0.7rem;
+  margin-right: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.underrated-section {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(160, 82, 138, 0.07);
+  padding: 1.5rem;
+}
+
+.underrated-section h2 {
+  margin-top: 0;
+  color: #a0528a;
+  font-size: 1.8rem;
+}
+
+.underrated-dramas {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.underrated-drama {
+  padding: 1.2rem;
+  background: #f9f6f2;
+  border-radius: 8px;
+  border-left: 4px solid #ffd700;
+}
+
+.underrated-drama h3 {
+  margin: 0 0 0.5rem 0;
+  color: #a0528a;
+  font-size: 1.3rem;
+}
+
+.underrated-drama p {
+  margin: 0 0 0.8rem 0;
+  line-height: 1.6;
+  color: #444;
+}
+
+.underrated-drama .tags {
+  margin-bottom: 0.8rem;
+}
+
+.underrated-drama .tags span {
+  background: #f3e6f5;
+  color: #a0528a;
+  border-radius: 4px;
+  padding: 0.2rem 0.7rem;
+  margin-right: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.my-recommendations {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(160, 82, 138, 0.07);
+  padding: 1.5rem;
+}
+
+.my-recommendations h2 {
+  margin-top: 0;
+  color: #a0528a;
+}
+
+.drama-list {
+  list-style: none;
+  padding: 0;
+}
+
+.drama-list li {
+  padding: 0.8rem 0;
+  border-bottom: 1px solid #f0f0f0;
+  line-height: 1.6;
+}
+
+.drama-list li:last-child {
+  border-bottom: none;
+}
+
+.drama-list strong {
+  color: #a0528a;
+  font-size: 1.1rem;
+}
+
+.more-dramas {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(160, 82, 138, 0.07);
+  padding: 1.5rem;
+}
+
+.more-dramas h2 {
+  margin-top: 0;
+  color: #a0528a;
+}
+
+.drama-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.drama-card {
+  background: #f9f6f2;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.drama-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(160, 82, 138, 0.15);
+}
+
+.drama-card img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 0.8rem;
+}
+
+.drama-card h3 {
+  margin: 0 0 0.5rem 0;
+  color: #a0528a;
+  font-size: 1.1rem;
+}
+
+.drama-card p {
+  margin: 0 0 0.8rem 0;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #666;
+}
+
+.drama-card span {
+  background: #f3e6f5;
+  color: #a0528a;
+  border-radius: 4px;
+  padding: 0.2rem 0.6rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+footer {
+  background: #fff;
+  border-top: 1px solid #ececec;
+  text-align: center;
+  padding: 1.2rem 0 1rem 0;
+  color: #a0528a;
+  font-size: 1rem;
+  margin-top: 2rem;
+}
+
+@media (max-width: 900px) {
+  main {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .sidebar {
+    min-width: 0;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+  .featured-drama {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 1rem;
+  }
+  .featured-drama img {
+    width: 100%;
+    max-width: 100%;
+  }
+  .blog-post {
+    padding: 1rem;
+  }
+} 
