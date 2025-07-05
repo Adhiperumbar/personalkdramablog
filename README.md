@@ -1,8 +1,4 @@
-Here you go! 📄 Just copy and paste this into your `README.md` file:
-
----
-
-```markdown
+Overview:
 # 🌸 KdramBlog — A Personal Korean Drama Blog
 
 Welcome to **KdramBlog**, a passion project where I share my thoughts, favorites, and recommendations about Korean dramas. This is a simple, clean, and responsive static website built with **HTML**, **CSS**, and a sprinkle of **JavaScript**.
